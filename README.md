@@ -1,0 +1,2 @@
+# MOME-project
+projekt munka
