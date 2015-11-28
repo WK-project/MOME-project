@@ -1,3 +1,10 @@
+body {
+  color: #474747;
+  font-family: 'Fira sans';
+  font-size: 18px;
+  line-height: 27px;
+}
+
 h1 {
   color: red;
 }
