@@ -1,8 +1,14 @@
 body {
+  background: #f2f2f2;
   color: #474747;
   font-family: 'Fira sans';
   font-size: 18px;
   line-height: 27px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 h1 {
