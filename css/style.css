@@ -49,49 +49,54 @@ body {
 
 .logo .meta {
   float: right;
-  line-height: 96px;
+  margin-right: -16px;
 }
 
-.meta li {
-  color: #fff;
-  display: inline-block;
-  font-size: 20px;
+.logo .meta li {
   float: left;
-  padding-left: 32px;
 }
 
-.meta li:first-child {
-  padding-left: 0;
+.logo .meta a {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  margin-top: 24px;
+  padding: 0 16px;
+  text-decoration: none;
+  line-height: 48px;
+}
+
+.logo .meta a:hover {
+  background: #85BC20;
 }
 
 .navigation {
-  background-color: rgb(0, 122, 195);
+  background: #00619C;
   height: 48px;
 }
 
 .navigation .menu {
-  margin: 0;
-  display: inline-block;
+  margin-left: -16px;
 }
 
 .navigation .menu li {
-  display: inline-block;
-  padding-right: 16px;
-  line-height: 48px;
+  float: left;
 }
 
 .navigation .menu a {
+  line-height: 48px;
   color: #fff;
+  display: block;
+  padding: 0 16px;
   text-decoration: none;
 }
 
 .navigation .menu a:hover {
-  text-decoration: underline;
+  background: #007AC3;
 }
 
 .navigation .produkt {
   float: right;
-  display: inline-block;
 }
 
 .produkt li {
@@ -113,36 +118,67 @@ body {
 /* Footer */
 .footer .label {
   background-color: rgb(117, 117, 117);
-  padding-top: 64px;
-  padding-bottom: 48px;
 }
 
 .label .sections {
+  list-style: none;
+  padding-left: 0;
   margin: 0;
-  padding: 0;
-  color: #fff;
+}
+
+.sections .section {
+  float: left;
+  width: 25%;
+  padding: 64px 0;
+}
+
+.sections .section span {
+  color: rgba(255, 255, 255, .5);
+  line-height: 40px;
+}
+
+.sections .section li {
   list-style: none;
 }
 
-.label .company_data h1 {
+.sections .section .menu_items {
+  padding-left: 0;
+}
+
+.sections .section .menu_items a {
+  color: #fff;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.sections .section .menu_items a:hover {
+  text-decoration: underline;
+}
+
+.label .sections_logo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sections_logo .section_logo {
   background-image: url(http://thebrand.wolterskluwer.com/wp-content/themes/wolters-kluwer-brand/assets/img/wolters-kluwer-logo-large.svg);
   background-repeat: no-repeat;
-  background-position: left bottom;
   display: inline-block;
-  margin: 0;
+  line-height: 64px;
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
   width: 200px;
 }
 
-.label .company_data h2 {
+.sections_logo .section_slogan {
   color: #fff;
   font-size: 22px;
-  float: right;
   font-weight: lighter;
-  margin: 0;
-  padding-top: 20px;
+  text-align: right;
+  float: right;
+  padding-top: 7px;
 }
 
 .wk .links li {
