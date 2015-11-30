@@ -112,6 +112,10 @@ body {
 
 /* Main */
 
+main section {
+  margin-bottom: 48px;
+}
+
 /* Main end */
 
 
@@ -120,48 +124,48 @@ body {
   background-color: rgb(117, 117, 117);
 }
 
-.label .sections {
+.label .footer_block {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.sections .section {
+.footer_block .block {
   float: left;
   width: 25%;
   padding: 64px 0;
 }
 
-.sections .section span {
+.footer_block .block span {
   color: rgba(255, 255, 255, .5);
   line-height: 40px;
 }
 
-.sections .section li {
+.footer_block .block li {
   list-style: none;
 }
 
-.sections .section .menu_items {
+.footer_block .block .menu_items {
   padding-left: 0;
 }
 
-.sections .section .menu_items a {
+.footer_block .block .menu_items a {
   color: #fff;
   line-height: 40px;
   text-decoration: none;
 }
 
-.sections .section .menu_items a:hover {
+.footer_block .block .menu_items a:hover {
   text-decoration: underline;
 }
 
-.label .sections_logo {
+.label .footer_block_logo {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.sections_logo .section_logo {
+.footer_block_logo .block_logo {
   background-image: url(http://thebrand.wolterskluwer.com/wp-content/themes/wolters-kluwer-brand/assets/img/wolters-kluwer-logo-large.svg);
   background-repeat: no-repeat;
   display: inline-block;
@@ -172,7 +176,7 @@ body {
   width: 200px;
 }
 
-.sections_logo .section_slogan {
+.footer_logo .block_slogan {
   color: #fff;
   font-size: 22px;
   font-weight: lighter;
