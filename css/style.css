@@ -296,7 +296,3 @@ main section div p {
   display: block;
   clear: both;
 }
-
-.left-cleared {
-	clear: left;
-}
