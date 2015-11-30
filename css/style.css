@@ -13,6 +13,11 @@ body {
   padding-right: 64px;
 }
 
+.container {
+  background: #fff;
+}
+
+
 /* Header */
 .header {
   background-image: url(../images/clients.jpg);
@@ -20,6 +25,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   height: 500px;
+  margin-bottom: 48px;
 }
 
 .header ul {
@@ -114,6 +120,27 @@ body {
 
 main section {
   margin-bottom: 48px;
+}
+
+main section div h2 {
+  color: #241866;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+main section div p {
+  line-height: 27px;
+}
+
+.usp {
+  float: left;
+  width: 368px;
+  margin-right: 128px;
+  padding-left: 80px;
+}
+
+.usp.people {
+  clear: left;
 }
 
 /* Main end */
