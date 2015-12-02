@@ -24,7 +24,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   height: 500px;
-  margin-bottom: 48px;
+  margin-bottom: 103px;
 }
 
 .header ul {
@@ -96,8 +96,40 @@ body {
   text-decoration: none;
 }
 
-.navigation .menu a:hover {
+.navigation .menu li:hover a {
   background: #007AC3;
+}
+
+.navigation .wrapper {
+  position: static;
+}
+
+
+.menu .sub_menu {
+  background: #007AC3;
+  display: none;
+  /*height: 50px;*/
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+}
+
+.menu li:hover .sub_menu {
+  display: block;
+}
+
+.menu .sub_menu:hover {
+  display: block;
+}
+
+.sub_menu .sub_menus li {
+  display: block;
+  float: none;
+}
+
+.sub_menu .sub_menus {
+  float: left;
 }
 
 .navigation .produkt {
@@ -125,6 +157,7 @@ body {
   bottom: 0;
   left: 0;
   width: 411px;
+  z-index: 2;
 }
 .quote_block {
   background: rgba(36, 24, 102, 0.5);
@@ -164,7 +197,21 @@ button {
   margin-left: 10px;
 }
 
+.cloud {
+  background: #fff;
+  height: 132px;
+  padding: 20px;
+  position: absolute;
+  bottom: -55px;
+  right: 0;
+  width: 605px;
+  z-index: 1;
+}
 
+.cloud p {
+  margin: 0;
+  padding-left: 70px;
+}
 
 /* Header end */
 
