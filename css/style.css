@@ -75,6 +75,21 @@ body {
   background: #85BC20;
 }
 
+.logo .meta button {
+  background: rgba(0, 0, 0, 0.0);
+}
+
+.logo .meta button::before {
+  background: url(../images/search.png);
+  background-size: cover;
+  display: block;
+  content: " ";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+}
+
 .navigation {
   background: #00619C;
   height: 48px;
@@ -130,6 +145,33 @@ body {
 
 .sub_menu .sub_menus {
   float: left;
+  width: 25%;
+  padding: 48px 0;
+}
+
+.navigation .sub_menus a {
+  line-height: 32px;
+  padding: 0;
+  text-decoration: none;
+}
+
+.navigation .sub_menus a:hover {
+  text-decoration: underline;
+}
+
+.navigation .sub_menus figure {
+  margin: 0;
+}
+
+.sub_menu .sub_menus img {
+  border: 0;
+  height: 155px;
+  width: 100%;
+}
+
+.navigation .sub_menus li {
+  color: #fff;
+  line-height: 27px;
 }
 
 .navigation .produkt {
@@ -199,7 +241,7 @@ button {
 
 .cloud {
   background: #fff;
-  height: 132px;
+  /*height: 132px;*/
   padding: 20px;
   position: absolute;
   bottom: -55px;
@@ -209,8 +251,11 @@ button {
 }
 
 .cloud p {
+  color: #717171;
   margin: 0;
-  padding-left: 70px;
+  padding: 0 60px 0 88px;
+  font-style: italic;
+  font-weight: bolder;
 }
 
 /* Header end */
