@@ -225,6 +225,7 @@ main section div h2 {
   color: #241866;
   font-size: 24px;
   line-height: 36px;
+  margin-top: 48px;
 }
 
 main section div p {
@@ -234,12 +235,57 @@ main section div p {
 .usp {
   float: left;
   width: 368px;
-  margin-right: 128px;
+/*  margin-right: 100px;*/
   padding-left: 80px;
+  position: relative;
 }
 
 .usp.people {
   clear: left;
+}
+
+.usp::before {
+  display: block;
+  content: " ";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  top: 48px;
+}
+
+.usp.case::before {
+  background: url(../images/case.png);
+  background-size: cover;
+}
+
+.usp.book::before {
+  background: url(../images/book.png);
+  background-size: cover;
+}
+
+.usp.people::before {
+  background: url(../images/people.png);
+  background-size: cover;
+}
+
+.usp.rule::before {
+  background: url(../images/rule.png);
+  background-size: cover;
+}
+
+section.wrapper .usp:nth-child(even) {
+  margin-left: 80px;
+}
+
+section.testimonial blockquote {
+  font-size: 24px;
+  font-style: italic;
+  line-height: 54px;
+}
+
+section.testimonial > img {
+
 }
 
 /* Main end */
