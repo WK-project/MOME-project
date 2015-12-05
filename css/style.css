@@ -370,8 +370,32 @@ section.testimonial button{
   position: absolute;
   left: 1000px;
   top: 440px;
-  background: url();
 
+}
+
+button.share::after {
+  background: url(../images/share.png);
+  background-size: cover;
+  display: block;
+  content: " ";
+  width: 64px;
+  height: 64px;
+  left: 40px;
+  top: 0;
+}
+
+section.promobox div.list-text {
+  font-size: 25px;
+  line-height: 35px;
+  color: #474747;
+}
+
+div.list-text ul {
+  list-style: none;
+}
+
+div.list-text ul li::before {
+  content: "\009B";
 }
 
 /* Main end */
