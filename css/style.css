@@ -438,7 +438,28 @@ section.promobox div img {
   max-width: auto;
 }
 
+section.promobox div.orangebox {
+  width: 512px;
+  height: 64px;
+  background-color: #ea8f00;
 
+}
+
+section.promobox div.orangebox h2 {
+  color: #fff;
+  font-size: 32px;
+  font-style: italic;
+  padding-left: 64px;
+  padding-top: 16px;
+}
+
+div.list-text {
+  float: left;
+}
+
+div.promobox-img {
+  float: left;
+}
 
 /* Main end */
 
