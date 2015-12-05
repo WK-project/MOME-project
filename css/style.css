@@ -39,9 +39,8 @@ body {
 }
 
 .logo h1 {
-  background-image: url(http://thebrand.wolterskluwer.com/wp-content/themes/wolters-kluwer-brand/assets/img/wolters-kluwer-logo-large.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background: url(../images/wolters-kluwer-logo.svg) no-repeat;
+  background-size: contain;
   background-position: left center;
   display: inline-block;
   margin: 0;
@@ -76,18 +75,15 @@ body {
 }
 
 .logo .meta button {
-  background: rgba(0, 0, 0, 0.0);
-}
-
-.logo .meta button::before {
-  background: url(../images/search.png);
-  background-size: cover;
-  display: block;
-  content: " ";
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 0;
+  background: url(../images/search.png) no-repeat;
+  background-size: contain;
+  background-position: right center;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 120%;
+  text-align: left;
+  height: 48px;
+  width: 32px;
 }
 
 .navigation {
@@ -145,7 +141,11 @@ body {
 
 .sub_menu .sub_menus {
   float: left;
-  width: 25%;
+  width: 232px;
+  padding: 48px 24px 48px 0;
+}
+
+.sub_menu .sub_menus:last-child {
   padding: 48px 0;
 }
 
@@ -234,8 +234,8 @@ button {
 }
 
 .free:after {
-  content: ' à ';
-  font-family: 'Wingdings';
+  content: 'Ò';
+  font-family: 'Wingdings 3';
   margin-left: 10px;
 }
 
@@ -376,6 +376,53 @@ section.testimonial > img {
   text-decoration: underline;
 }
 
+.socials_items li {
+  float: left;
+  margin-right: 10px;
+}
+
+.socials_items .Facebook {
+  background: url(../images/icon_facebook.svg) no-repeat;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 110%;
+  text-align: left;
+  height: 32px;
+  width: 32px;
+}
+
+.socials_items .Twitter {
+  background: url(../images/icon_twitter.svg) no-repeat;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 110%;
+  text-align: left;
+  height: 32px;
+  width: 32px;
+}
+
+.socials_items .LinkedIN {
+  background: url(../images/icon_linkedin.svg) no-repeat;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 110%;
+  text-align: left;
+  height: 32px;
+  width: 32px;
+}
+
+.socials_items .YouTube {
+  background: url(../images/icon_youtube.svg) no-repeat;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 110%;
+  text-align: left;
+  height: 32px;
+  width: 32px;
+  margin-top: 5px;
+}
+
+
 .label .footer_block_logo {
   list-style: none;
   margin: 0;
@@ -383,8 +430,7 @@ section.testimonial > img {
 }
 
 .footer_block_logo .block_logo {
-  background-image: url(http://thebrand.wolterskluwer.com/wp-content/themes/wolters-kluwer-brand/assets/img/wolters-kluwer-logo-large.svg);
-  background-repeat: no-repeat;
+  background: url(../images/wolters-kluwer-logo.svg) no-repeat;
   display: inline-block;
   line-height: 64px;
   text-indent: 110%;
