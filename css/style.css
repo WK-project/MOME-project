@@ -39,8 +39,9 @@ body {
 }
 
 .logo h1 {
-  background: url(../images/wolters-kluwer-logo.svg) no-repeat;
+  background-image: url(../images/wolters-kluwer-logo.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: left center;
   display: inline-block;
   margin: 0;
@@ -269,7 +270,7 @@ button {
 }
 
 .free:after {
-  content: 'à';
+  content: ' à ';
   font-family: 'Wingdings';
   margin-left: 10px;
 }
@@ -301,7 +302,7 @@ main section {
   margin-bottom: 48px;
 }
 
-main section div h2 {
+.container section div h2 {
   color: #241866;
   font-size: 24px;
   line-height: 36px;
@@ -359,13 +360,78 @@ section.wrapper .usp:nth-child(even) {
 }
 
 section.testimonial blockquote {
-  font-size: 24px;
+  font-size: 42px;
   font-style: italic;
   line-height: 54px;
+  margin: 20px 0 20px 40px;
 }
 
-section.testimonial > img {
+section.testimonial h2,
+section.testimonial h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  margin: 0 0 0 40px;
+}
 
+section.testimonial h3 {
+  font-weight: 300;
+}
+
+section.testimonial div img {
+  height: 368px;
+  max-width: auto;
+  /*position: absolute;
+  top: 112px;*/
+  margin-top: 112px;
+}
+
+section.testimonial {
+  position: relative;
+}
+
+section.testimonial div.quote {
+  position: absolute;
+  width: 576px;
+  height: 280px;
+  background: #007Ac3;
+  color: #fff;
+  top: 64px;
+  left: 525px;
+}
+
+section.testimonial button{
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  left: 1000px;
+  top: 440px;
+
+}
+
+button.share::after {
+  background: url(../images/share.png);
+  background-size: cover;
+  display: block;
+  content: " ";
+  width: 64px;
+  height: 64px;
+  left: 40px;
+  top: 0;
+}
+
+section.promobox div.list-text {
+  font-size: 25px;
+  line-height: 35px;
+  color: #474747;
+}
+
+div.list-text ul {
+  list-style: none;
+}
+
+div.list-text ul li::before {
+  content: "\009B";
 }
 
 /* Main end */
@@ -409,6 +475,32 @@ section.testimonial > img {
 
 .footer_block .block .menu_items a:hover {
   text-decoration: underline;
+}
+
+.label .footer_block_logo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer_block_logo .block_logo {
+  background-image: url(../images/wolters-kluwer-logo.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  line-height: 64px;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 200px;
+}
+
+.footer_block_logo .block_slogan {
+  color: #fff;
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: right;
+  float: right;
+  padding-top: 7px;
 }
 
 .socials_items li {
@@ -455,32 +547,6 @@ section.testimonial > img {
   height: 32px;
   width: 32px;
   margin-top: 5px;
-}
-
-
-.label .footer_block_logo {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer_block_logo .block_logo {
-  background: url(../images/wolters-kluwer-logo.svg) no-repeat;
-  display: inline-block;
-  line-height: 64px;
-  text-indent: 110%;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 200px;
-}
-
-.footer_block_logo .block_slogan {
-  color: #fff;
-  font-size: 22px;
-  font-weight: lighter;
-  text-align: right;
-  float: right;
-  padding-top: 7px;
 }
 
 .wk .links {
