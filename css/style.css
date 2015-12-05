@@ -298,7 +298,7 @@ button {
 
 /* Main */
 
-main section {
+main section.wrapper {
   margin-bottom: 48px;
 }
 
@@ -381,8 +381,6 @@ section.testimonial h3 {
 section.testimonial div img {
   height: 368px;
   max-width: auto;
-  /*position: absolute;
-  top: 112px;*/
   margin-top: 112px;
 }
 
@@ -424,6 +422,7 @@ section.promobox div.list-text {
   font-size: 25px;
   line-height: 35px;
   color: #474747;
+  background-color: #fff;
 }
 
 div.list-text ul {
@@ -433,6 +432,13 @@ div.list-text ul {
 div.list-text ul li::before {
   content: "\009B";
 }
+
+section.promobox div img {
+  height: 256px;
+  max-width: auto;
+}
+
+
 
 /* Main end */
 
