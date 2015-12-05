@@ -80,7 +80,7 @@ body {
   background-position: right center;
   display: inline-block;
   overflow: hidden;
-  text-indent: 120%;
+  text-indent: 125%;
   text-align: left;
   height: 48px;
   width: 32px;
@@ -115,6 +115,41 @@ body {
   position: static;
 }
 
+button.search-open:focus {
+  outline: none;
+}
+
+form.search_box {
+  position: absolute;
+  background: rgb(133, 188, 32);
+  padding: 48px 0;
+  z-index: 5;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.search_box .red_button {
+  background: rgb(229, 32, 46);
+  border: 0;
+  color: #fff;
+  display: block;
+  line-height: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.search_box input {
+  border: 0;
+  line-height: 48px;
+  padding-left: 20px;
+  width: 980px;
+}
 
 .menu .sub_menu {
   background: #007AC3;
@@ -234,8 +269,8 @@ button {
 }
 
 .free:after {
-  content: 'Ò';
-  font-family: 'Wingdings 3';
+  content: 'à';
+  font-family: 'Wingdings';
   margin-left: 10px;
 }
 

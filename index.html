@@ -11,21 +11,27 @@
   <header class="header">
     <section class="logo">
       <div class="wrapper">
-        <h1>Wolters Kluwer</h1>
         <ul class="meta">
           <li><a href="#">Login</a></li>
           <li><a href="#">Chart</a></li>
           <li><a href="#">EN</a></li>
           <li>
             <a href="#">
-              <button>
+              <button class="search-open">
                 Keresés
               </button>
             </a>
           </li>
         </ul>
+        <h1>Wolters Kluwer</h1>
       </div>
     </section>
+    <form method="post" action="index.html" enctype="multipart/form-data" class="search_box hide">
+      <div class="wrapper">
+        <button class="red_button">Search</button>
+        <input type="text" name="search_field" placeholder="Type of search">
+      </div>
+    </form>
     <nav class="navigation">
       <div class="wrapper">
         <ul class="menu">
@@ -94,8 +100,71 @@
                 </div>
               </div>
           </li>
-          <li><a href="#">Experts</a></li>
-          <li><a href="#">News</a></li>
+          <li>
+            <a href="#">Experts</a>
+              <div class="sub_menu">
+                <div class="wrapper">
+                  <ul class="sub_menus">
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Második sor</a></li>
+                    <li><a href="#">Ez lesz a harmadik</a></li>
+                    <li><a href="#">Negyedik</a></li>
+                    <li><a href="#">uccsó</a></li>
+                  </ul>
+                  <ul class="sub_menus">
+                    <li><a href="#">Második oszlop első sor</a></li>
+                    <li><a href="#">Második sor</a></li>
+                    <li><a href="#">Ez lesz a harmadik</a></li>
+                    <li><a href="#">Negyedik</a></li>
+                  </ul>
+                  <ul class="sub_menus">
+                    <li>
+                      <figure>
+                        <img src="images/clients.jpg" alt="Ez az első kép"/>
+                      </figure>
+                    </li>
+                    <li>Harmadik oszlop</li>
+                  </ul>
+                  <ul class="sub_menus">
+                    <li>
+                      <figure>
+                        <img src="images/testimonial1.jpg" alt="Ez egy másik kép"/>
+                      </figure>
+                    </li>
+                    <li>Negyedik oszlop kép alatti szöveg két sorban</li>
+                  </ul>
+                </div>
+              </div>
+          </li>
+          <li>
+            <a href="#">News</a>
+              <div class="sub_menu">
+                <div class="wrapper">
+                  <ul class="sub_menus">
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Második sor</a></li>
+                    <li><a href="#">Ez lesz a harmadik</a></li>
+                    <li><a href="#">Negyedik</a></li>
+                    <li><a href="#">uccsó</a></li>
+                  </ul>
+                  <ul class="sub_menus">
+                    <li><a href="#">Második oszlop első sor</a></li>
+                    <li><a href="#">Második sor</a></li>
+                    <li><a href="#">Ez lesz a harmadik</a></li>
+                    <li><a href="#">Negyedik</a></li>
+                  </ul>
+                  <ul class="sub_menus">
+                    <li><a href="#">Harmadik oszlop első sor</a></li>
+                    <li><a href="#">Második sor</a></li>
+                  </ul>
+                  <ul class="sub_menus">
+                    <li><a href="#">Negyedik oszlop első sor</a></li>
+                    <li><a href="#">Második sor</a></li>
+                    <li><a href="#">Ez lesz a harmadik</a></li>
+                  </ul>
+                </div>
+              </div>
+          </li>
           <li><a href="#">About Division name</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
@@ -228,5 +297,8 @@
       </div>
     </section>
   </footer>
+
+  <script src="script/wk.js"></script>
+
 </body>
 </html>
