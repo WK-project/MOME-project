@@ -298,7 +298,9 @@ button {
 
 /* Main */
 
-main section.wrapper {
+main section.wrapper,
+main section.wrapperpromobox,
+main section.wrapperbenefits {
   margin-bottom: 48px;
 }
 
@@ -414,9 +416,15 @@ button.share::after {
   content: " ";
   width: 64px;
   height: 64px;
-  left: 40px;
-  top: 0;
+  left: 100px;
+  top: 110;
+  position: absolute;
 }
+
+section.promobox {
+  position: relative;
+}
+
 
 section.promobox div.list-text {
   font-size: 25px;
@@ -427,22 +435,29 @@ section.promobox div.list-text {
 
 div.list-text ul {
   list-style: none;
+  padding: 64px 0 0 0;
+  left: -10px;
+  margin-left: 145px;
+  margin-top: 0;
 }
 
 div.list-text ul li::before {
-  content: "\009B";
+  content: ">  ";
 }
 
 section.promobox div img {
   height: 256px;
   max-width: auto;
+  margin-top: 64px;
+
 }
 
 section.promobox div.orangebox {
   width: 512px;
   height: 64px;
   background-color: #ea8f00;
-
+  position: absolute;
+  left: -64px;                /* !!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 section.promobox div.orangebox h2 {
@@ -451,15 +466,108 @@ section.promobox div.orangebox h2 {
   font-style: italic;
   padding-left: 64px;
   padding-top: 16px;
+  margin: 0;
 }
 
 div.list-text {
   float: left;
+  width: 400;
+
+}
+
+section.promobox button {
+  position: absolute;
+  font-size: 16px;
+  font-weight: bolder;
+  background: #fff;
+  top: 330px;
 }
 
 div.promobox-img {
   float: left;
+  position: relative;
+  left: 246px;            /* !!!!!!!!!!!!!!!!!*/
 }
+
+div.promobox-pic {
+  position: absolute;
+}
+
+.wrapperpromobox {
+  width: 1330px;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(to right, #fff 0%, #fff 61.5%, #F2F2F2 61.5%, #F2F2F2 100%);
+}
+
+.container-promobox{
+  background: linear-gradient(to right, #fff 0%, #fff 50%, #F2F2F2 50%, #F2F2F2 100%);
+}
+
+.wrapperbenefits {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+div.benefit-img {
+  background-image: url(../images/tablet1.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 640px;
+}
+
+.benefit {
+  float: left;
+  width: 320px;
+  height: 160px;
+  padding-left: 48px;
+  padding-top: 20px;
+
+}
+
+.benefit-long {
+  float: left;
+  width: 320px;
+  height: 192px;
+  padding-left: 48px;
+  padding-top: 20px;
+}
+
+.benefit:nth-child(even),
+.benefit-long:nth-child(even) {
+  margin-left: 384px;
+}
+
+.cost,
+.safety {
+  background-color: #241866;
+}
+
+.flexibility,
+.usability {
+  background-color: #007Ac3;
+}
+
+.benefit-img .benefit h2 {
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.benefit-img .benefit p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+
+
+
+
 
 /* Main end */
 
