@@ -277,10 +277,10 @@ button {
 
 .cloud {
   background: #fff;
-  /*height: 132px;*/
+  height: 130px;
   padding: 20px;
   position: absolute;
-  bottom: -55px;
+  bottom: -50px;
   right: 0;
   width: 605px;
   z-index: 1;
@@ -289,7 +289,7 @@ button {
 .cloud p {
   color: #717171;
   margin: 0;
-  padding: 0 60px 0 88px;
+  padding: 10px 85px;
   font-style: italic;
   font-weight: bolder;
 }
