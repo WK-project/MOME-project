@@ -510,63 +510,146 @@ div.promobox-pic {
   position: relative;
 }
 
-div.benefit-img {
+section.benefit-img {
   background-image: url(../images/tablet1.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   height: 640px;
+  margin-bottom: 48px;
 }
 
-.benefit {
-  float: left;
+.benefit-img .wrapper {
+  height: 100%;
+}
+
+.benefit-left-top {
+  position: absolute;
+  left: 0;
+  top: 48px;
+  /*height: 160px;*/
   width: 320px;
-  height: 160px;
-  padding-left: 48px;
-  padding-top: 20px;
-
 }
 
-.benefit-long {
-  float: left;
+.benefit-left-top:after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 0;
+  right: -64px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 64px 0 0 64px;
+  border-color: transparent transparent transparent rgba(36, 24, 102, 0.5);
+}
+
+
+.benefit-left-bottom-long  {
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  /*height: 192px;*/
   width: 320px;
-  height: 192px;
-  padding-left: 48px;
-  padding-top: 20px;
 }
 
-.benefit:nth-child(even),
+.benefit-left-bottom-long:after  {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  right: -64px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 64px 64px 0 0;
+  border-color: rgba(0, 122, 195, 0.5) transparent transparent transparent;
+}
+
+
+.benefit-right-top {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  /*height: 160px;*/
+  width: 320px;
+}
+
+.benefit-right-top:after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 0;
+  left: -64px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 64px 64px;
+  border-color: transparent transparent rgba(0, 122, 195, 0.5) transparent;
+}
+
+
+.benefit-right-bottom-long {
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+  /*height: 192px;*/
+  width: 320px;
+}
+
+.benefit-right-bottom-long:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: -64px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 64px 64px 0;
+  border-color: transparent rgba(36, 24, 102, 0.5) transparent transparent;
+}
+
+
+/*.benefit:nth-child(even),
 .benefit-long:nth-child(even) {
   margin-left: 384px;
-}
+}*/
 
 .cost,
 .safety {
-  background-color: #241866;
+  background: rgba(36, 24, 102, 0.5);
+  padding: 24px;
 }
 
 .flexibility,
 .usability {
-  background-color: #007Ac3;
+  background: rgba(0, 122, 195, 0.5);
+  padding: 24px;
 }
 
-.benefit-img .benefit h2 {
+.cost h2,
+.safety h2,
+.flexibility h2,
+.usability h2 {
   color: #fff;
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+  margin-top: 0;
 }
 
-.benefit-img .benefit p {
+.cost p,
+.safety p,
+.flexibility p,
+.usability p {
   color: #fff;
   font-size: 18px;
   font-weight: 300;
   line-height: 27px;
+  margin-bottom: 0;
 }
-
-
-
-
 
 
 /* Main end */
