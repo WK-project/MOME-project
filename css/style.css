@@ -147,9 +147,10 @@ form.search_box {
 
 .search_box input {
   border: 0;
-  line-height: 48px;
+  height: 48px;
   padding-left: 20px;
-  width: 980px;
+  padding-right: 20px;
+  width: 845px;
 }
 
 .menu .sub_menu {
@@ -362,10 +363,18 @@ section.wrapper .usp:nth-child(even) {
 }
 
 section.testimonial blockquote {
-  font-size: 42px;
+  font-size: 32px;
+  font-weight: 400;
   font-style: italic;
-  line-height: 54px;
-  margin: 20px 0 20px 40px;
+  margin: 0;
+}
+
+section.testimonial blockquote::before {
+  content: "\201C"
+}
+
+section.testimonial blockquote::after {
+  content: "\201D"
 }
 
 section.testimonial h2,
@@ -373,31 +382,33 @@ section.testimonial h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
-  margin: 0 0 0 40px;
+  margin: 20px 0 0 0;
 }
 
 section.testimonial h3 {
   font-weight: 300;
+  margin: 0;
 }
 
 section.testimonial div img {
-  height: 368px;
-  max-width: auto;
-  margin-top: 112px;
+  margin-top: 48px;
+  height: 384px;
+  width: 768px;
 }
 
 section.testimonial {
   position: relative;
+  margin-bottom: 48px;
 }
 
 section.testimonial div.quote {
   position: absolute;
-  width: 576px;
-  height: 280px;
-  background: #007Ac3;
+  width: 420px;
+  background: rgba(0, 122, 195, 0.9);
+  padding: 24px;
   color: #fff;
-  top: 64px;
-  left: 525px;
+  top: 0;
+  right: 0;
 }
 
 section.testimonial button{
