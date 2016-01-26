@@ -434,56 +434,46 @@ button.share::after {
 
 section.promobox {
   position: relative;
+  margin-bottom: 48px;
 }
 
-
-section.promobox div.list-text {
+ul.list-text {
+  background: #fff;
   font-size: 25px;
   line-height: 35px;
   color: #474747;
-  background-color: #fff;
-}
-
-div.list-text ul {
   list-style: none;
-  padding: 64px 0 0 0;
-  left: -10px;
-  margin-left: 145px;
-  margin-top: 0;
+  padding: 64px 64px 64px 20px;
+  margin: 0;
+  width: 515px;
 }
 
-div.list-text ul li::before {
-  content: ">  ";
+ul.list-text li::before {
+  content: "\003E";
+  position: absolute;
+  margin-left: -20px;
+
 }
 
 section.promobox div img {
   height: 256px;
-  max-width: auto;
-  margin-top: 64px;
-
+  width: 464px;
+  margin-right: -64px;
 }
 
 section.promobox div.orangebox {
-  width: 512px;
   height: 64px;
   background-color: #ea8f00;
-  position: absolute;
-  left: -64px;                /* !!!!!!!!!!!!!!!!!!!!!!*/
+  margin-left: -64px;
 }
 
 section.promobox div.orangebox h2 {
   color: #fff;
   font-size: 32px;
   font-style: italic;
+  line-height: 64px;
   padding-left: 64px;
-  padding-top: 16px;
   margin: 0;
-}
-
-div.list-text {
-  float: left;
-  width: 400;
-
 }
 
 section.promobox button {
@@ -495,30 +485,14 @@ section.promobox button {
 }
 
 div.promobox-img {
-  float: left;
-  position: relative;
-  left: 246px;            /* !!!!!!!!!!!!!!!!!*/
-}
-
-div.promobox-pic {
   position: absolute;
-}
-
-.wrapperpromobox {
-  width: 1330px;
-  margin: 0 auto;
-  position: relative;
-  background: linear-gradient(to right, #fff 0%, #fff 61.5%, #F2F2F2 61.5%, #F2F2F2 100%);
+  top: 0;
+  right: 0;
+  /*width: 400px;*/
 }
 
 .container-promobox{
   background: linear-gradient(to right, #fff 0%, #fff 50%, #F2F2F2 50%, #F2F2F2 100%);
-}
-
-.wrapperbenefits {
-  width: 1280px;
-  margin: 0 auto;
-  position: relative;
 }
 
 section.benefit-img {
