@@ -271,9 +271,9 @@ button {
 }
 
 .free:after {
-  content: ' à ';
-  font-family: 'Wingdings';
+  content: "à";
   margin-left: 10px;
+  font-family: 'Wingdings';
 }
 
 .cloud {
@@ -449,9 +449,10 @@ ul.list-text {
 }
 
 ul.list-text li::before {
-  content: "\003E";
+  content: "\203A";
   position: absolute;
   margin-left: -20px;
+  font-weight: bolder;
 
 }
 
@@ -634,6 +635,14 @@ section.benefit-img {
   font-weight: 300;
   line-height: 27px;
   margin-bottom: 0;
+}
+
+.calltoaction {
+  height: 300px;
+}
+
+.calltoaction .wrapper {
+  height: 100%;
 }
 
 
