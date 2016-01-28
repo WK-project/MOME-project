@@ -708,6 +708,31 @@ section.benefit-img {
   font-weight: bolder;
 }
 
+section.FAQ {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.container-FAQ {
+  background: linear-gradient(to right, #241866 0%, #241866 50%, #F2F2F2 50%, #F2F2F2 100%);
+}
+
+.container-FAQ .accordion {
+  background: rgb(36, 24, 102);
+  padding: 24px 64px 64px 0;
+  margin: 0;
+  list-style: none;
+  width: 516px;
+}
+
+.accordion span.accordion-titletext {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 33px 0;
+  font-size: 25px;
+}
+
+
+
 
 
 /* Main end */
