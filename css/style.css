@@ -231,19 +231,19 @@ form.search_box {
   height: 100%;
 }
 
-.quote_wrapper {
+.intro .quote_wrapper {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 411px;
   z-index: 2;
 }
-.quote_block {
+.intro .quote_block {
   background: rgba(36, 24, 102, 0.5);
   padding: 48px;
 }
 
-.quote_block h2 {
+.intro .quote_block h2 {
   color: #fff;
   font-size: 26px;
   font-style: italic;
@@ -252,16 +252,16 @@ form.search_box {
   margin: 0;
 }
 
-.quote_block p {
+.intro .quote_block p {
   color: #fff;
   margin: 10px 0 0;
 }
 
-button {
+ button {
   border: 0;
 }
 
-.free {
+.intro .free {
   background: rgb(229, 32, 46);
   color: #fff;
   display: block;
@@ -270,13 +270,13 @@ button {
   float: right;
 }
 
-.free:after {
+.intro .free:after {
   content: "à";
   margin-left: 10px;
   font-family: 'Wingdings';
 }
 
-.cloud {
+.intro .cloud {
   background: #fff;
   height: 130px;
   padding: 20px;
@@ -287,7 +287,7 @@ button {
   z-index: 1;
 }
 
-.cloud p {
+.intro .cloud p {
   color: #717171;
   margin: 0;
   padding: 10px 85px;
@@ -527,7 +527,7 @@ section.benefit-img {
   height: 0;
   border-style: solid;
   border-width: 64px 0 0 64px;
-  border-color: transparent transparent transparent rgba(36, 24, 102, 0.5);
+  border-color: transparent transparent transparent rgba(36, 24, 102, 0.7);
 }
 
 
@@ -549,7 +549,7 @@ section.benefit-img {
   height: 0;
   border-style: solid;
   border-width: 64px 64px 0 0;
-  border-color: rgba(0, 122, 195, 0.5) transparent transparent transparent;
+  border-color: rgba(0, 122, 195, 0.7) transparent transparent transparent;
 }
 
 
@@ -571,7 +571,7 @@ section.benefit-img {
   height: 0;
   border-style: solid;
   border-width: 0 0 64px 64px;
-  border-color: transparent transparent rgba(0, 122, 195, 0.5) transparent;
+  border-color: transparent transparent rgba(0, 122, 195, 0.7) transparent;
 }
 
 
@@ -593,7 +593,7 @@ section.benefit-img {
   height: 0;
   border-style: solid;
   border-width: 0 64px 64px 0;
-  border-color: transparent rgba(36, 24, 102, 0.5) transparent transparent;
+  border-color: transparent rgba(36, 24, 102, 0.7) transparent transparent;
 }
 
 
@@ -604,13 +604,13 @@ section.benefit-img {
 
 .cost,
 .safety {
-  background: rgba(36, 24, 102, 0.5);
+  background: rgba(36, 24, 102, 0.7);
   padding: 24px;
 }
 
 .flexibility,
 .usability {
-  background: rgba(0, 122, 195, 0.5);
+  background: rgba(0, 122, 195, 0.7);
   padding: 24px;
 }
 
@@ -638,12 +638,76 @@ section.benefit-img {
 }
 
 .calltoaction {
-  height: 300px;
+  height: 250px;
+  margin-bottom: 48px;
 }
 
 .calltoaction .wrapper {
   height: 100%;
 }
+
+.calltoaction .quote_wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 420px;
+  z-index: 2;
+}
+.calltoaction .quote_block {
+  background: rgba(234, 143, 0, 0.7);
+  padding: 24px;
+}
+
+.calltoaction .quote_block h2 {
+  color: #fff;
+  font-size: 32px;;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 46px;
+  margin: 0;
+}
+
+.calltoaction .quote_block p {
+  color: #fff;
+  margin: 10px 0 0;
+}
+
+.calltoaction button {
+  border: 0;
+}
+
+.calltoaction .free {
+  background: rgb(229, 32, 46);
+  color: #fff;
+  display: block;
+  line-height: 64px;
+  padding: 0 20px;
+  float: right;
+}
+
+.calltoaction .free:after {
+  content: "à";
+  margin-left: 10px;
+  font-family: 'Wingdings';
+}
+
+.calltoaction .cloud {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 760px;
+  z-index: 1;
+}
+
+.calltoaction .cloud p {
+  color: #717171;
+  margin: 0;
+  padding: 48px 220px 48px 48px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
 
 
 /* Main end */
