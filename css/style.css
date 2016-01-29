@@ -739,7 +739,8 @@ section.FAQ {
   text-decoration: none;
   cursor: pointer;
   display: block;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .accordion .accordion-item h3 {
