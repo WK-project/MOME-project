@@ -6,6 +6,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>Wolters Kluver</title>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -276,58 +277,72 @@
         </p>
       </div>
     </section>
-    <section class="FAQ container-FAQ">
+    <section class="clearfix FAQ container-FAQ">
       <div class="wrapper">
-        <ul class="accordion">
-          <li class="accordiontitle">
-            <span class="accordion-titletext">Frequently asked questions</span>
-          </li>
-          <li class="accordion-item">
-
-              <a href="http://www.index.hu" target="_blank">
-                <h3>Update</h3>
-                <h4>What happens to my current data, like adminstration when we wil converge to Kleos?</h4>
-              </a>
-
-
-            <!--<div class="accordion-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>-->
-
-          </li>
-
-          <li class="accordion-item">
-            <div class="accordion-itemtitle">
-              <a href="#">
-                <h3>Safety</h3>
-                <h4>How is safe is the data proctected from hacking?</h4>
-              </a>
-            </div>
-            <!--<div class="accordion-content">
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>-->
-          </li>
-          <li class="accordion-item">
-            <div class="accordion-itemtitle">
-              <a href="#">
-                <h3>Update</h3>
-                <h4>What happens to my current data, like adminstration when we wil converge to Kleos?</h4>
-              </a>
-            </div>
-            <!--<div class="accordion-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>-->
-          </li>
-
-        </ul>
+        <div class="FAQ-titletext">Frequently asked questions</div>
+        <div id="dropdown-1" class="dropdown dropdown-processed">
+          <a class="dropdown-link" href="#">
+            <h3>Update</h3>
+            <h4>What happens to my current data, like adminstration when we wil converge to Kleos?</h4>
+          </a>
+          <div class="dropdown-container" style="display: none;">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div id="dropdown-2" class="dropdown dropdown-processed">
+          <a class="dropdown-link" href="#">
+            <h3>Safety</h3>
+            <h4>How is safe is the data proctected from hacking?</h4>
+          </a>
+          <div class="dropdown-container" style="display: none;">
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div id="dropdown-3" class="dropdown dropdown-processed">
+          <a class="dropdown-link" href="#">
+            <h3>Costs</h3>
+            <h4>What package deals are there and what are the costs?</h4>
+          </a>
+          <div class="dropdown-container" style="display: none;">
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+        </div>
+        <div id="dropdown-4" class="dropdown dropdown-processed">
+          <a class="dropdown-link" href="#">
+            <h3>Flexibility</h3>
+            <h4>My practice changes quickly, how flexible is Kleos to fluctuating situations?</h4>
+          </a>
+          <div class="dropdown-container" style="display: none;">
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+        </div>
+        <div id="dropdown-5" class="dropdown dropdown-processed">
+          <a class="dropdown-link" href="#">
+            <h3>Data</h3>
+            <h4>What is the quality of the data Kleos provides?</h4>
+          </a>
+          <div class="dropdown-container" style="display: none;">
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </section
+    </section>
   </main>
   <footer class="footer">
     <section class="label">

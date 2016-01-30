@@ -714,36 +714,40 @@ section.FAQ {
 }
 
 .container-FAQ {
-  background: linear-gradient(to right, #241866 0%, #241866 50%, #F2F2F2 50%, #F2F2F2 100%);
-}
-
-.container-FAQ .accordion {
-  background: #241866;
+  background: linear-gradient(to right, #241866 0%, #241866 60%, #F2F2F2 60%, #F2F2F2 100%);
   padding: 24px 0 64px 0;
-  margin: 0;
+}
+
+.FAQ .dropdown-container {
+  position: absolute;
+  right: 0;
+  background: #fff;
   list-style: none;
-  width: 580px;
-  position: relative;
+  padding: 48px 64px;
 }
 
-.accordion .accordiontitle {
-  padding-bottom: 20px;
+.FAQ .dropdown {
+  width: 625px;
 }
 
-.accordion span.accordion-titletext {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 25px;
-}
-
-.accordion .accordion-item a {
+.FAQ a.dropdown-link {
   text-decoration: none;
-  cursor: pointer;
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.accordion .accordion-item h3 {
+.FAQ a.dropdown-link:hover {
+  background-color: #fff ;
+}
+
+.FAQ .FAQ-titletext {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.FAQ .dropdown h3 {
   color: rgba(255, 255, 255, 0.5);
   font-size: 18px;
   font-weight: 300;
@@ -751,8 +755,7 @@ section.FAQ {
   margin: 0;
   padding: 0 32px;
 }
-
-.accordion .accordion-item h4 {
+.FAQ .dropdown h4 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 300;
@@ -761,20 +764,17 @@ section.FAQ {
   padding: 0 32px;
 }
 
-.accordion .accordion-item a:hover {
-  text-decoration: none;
-  cursor: pointer;
-  background: #fff;
-}
-
-.accordion .accordion-item a:hover h3 {
+.FAQ a.dropdown-link:hover h3 {
   color: #474747;
 }
 
-.accordion .accordion-item a:hover h4 {
+.FAQ a.dropdown-link:hover h4 {
   color: #241866;
 }
 
+.FAQ .dropdown-container p {
+  width: 365px;
+}
 
 /* Main end */
 
