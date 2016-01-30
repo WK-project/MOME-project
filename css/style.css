@@ -714,8 +714,7 @@ section.FAQ {
 }
 
 .container-FAQ {
-  background: linear-gradient(to right, #241866 0%, #241866 60%, #F2F2F2 60%, #F2F2F2 100%);
-  padding: 24px 0 64px 0;
+  background: linear-gradient(to right, #241866 0%, #241866 50%, #F2F2F2 50%, #F2F2F2 100%);
 }
 
 .FAQ .dropdown-container {
@@ -724,10 +723,40 @@ section.FAQ {
   background: #fff;
   list-style: none;
   padding: 48px 64px;
+  width: 247px;
 }
 
 .FAQ .dropdown {
+  background: #241866;
   width: 625px;
+}
+
+.FAQ div#dropdown-1 {
+  padding-top: 24px;
+}
+
+.FAQ div#dropdown-5 {
+  padding-bottom: 64px;
+}
+
+.FAQ div#dropdown-1 .dropdown-container {
+  top: 84px;
+}
+
+.FAQ div#dropdown-2 .dropdown-container {
+  top: 181px;
+}
+
+.FAQ div#dropdown-3 .dropdown-container {
+  top: 136px;
+}
+
+.FAQ div#dropdown-4 .dropdown-container {
+  bottom: 136px;
+}
+
+.FAQ div#dropdown-5 .dropdown-container {
+  bottom: 64px;
 }
 
 .FAQ a.dropdown-link {
@@ -773,7 +802,7 @@ section.FAQ {
 }
 
 .FAQ .dropdown-container p {
-  width: 365px;
+  margin: 0;
 }
 
 /* Main end */
