@@ -147,9 +147,10 @@ form.search_box {
 
 .search_box input {
   border: 0;
-  line-height: 48px;
+  height: 48px;
   padding-left: 20px;
-  width: 980px;
+  padding-right: 20px;
+  width: 845px;
 }
 
 .menu .sub_menu {
@@ -230,19 +231,19 @@ form.search_box {
   height: 100%;
 }
 
-.quote_wrapper {
+.intro .quote_wrapper {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 411px;
   z-index: 2;
 }
-.quote_block {
+.intro .quote_block {
   background: rgba(36, 24, 102, 0.5);
   padding: 48px;
 }
 
-.quote_block h2 {
+.intro .quote_block h2 {
   color: #fff;
   font-size: 26px;
   font-style: italic;
@@ -251,16 +252,16 @@ form.search_box {
   margin: 0;
 }
 
-.quote_block p {
+.intro .quote_block p {
   color: #fff;
   margin: 10px 0 0;
 }
 
-button {
+ button {
   border: 0;
 }
 
-.free {
+.intro .free {
   background: rgb(229, 32, 46);
   color: #fff;
   display: block;
@@ -269,13 +270,13 @@ button {
   float: right;
 }
 
-.free:after {
-  content: ' à ';
-  font-family: 'Wingdings';
+.intro .free:after {
+  content: "à";
   margin-left: 10px;
+  font-family: 'Wingdings';
 }
 
-.cloud {
+.intro .cloud {
   background: #fff;
   height: 130px;
   padding: 20px;
@@ -286,7 +287,7 @@ button {
   z-index: 1;
 }
 
-.cloud p {
+.intro .cloud p {
   color: #717171;
   margin: 0;
   padding: 10px 85px;
@@ -362,10 +363,18 @@ section.wrapper .usp:nth-child(even) {
 }
 
 section.testimonial blockquote {
-  font-size: 42px;
+  font-size: 32px;
+  font-weight: 400;
   font-style: italic;
-  line-height: 54px;
-  margin: 20px 0 20px 40px;
+  margin: 0;
+}
+
+section.testimonial blockquote::before {
+  content: "\201C"
+}
+
+section.testimonial blockquote::after {
+  content: "\201D"
 }
 
 section.testimonial h2,
@@ -373,31 +382,33 @@ section.testimonial h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
-  margin: 0 0 0 40px;
+  margin: 20px 0 0 0;
 }
 
 section.testimonial h3 {
   font-weight: 300;
+  margin: 0;
 }
 
 section.testimonial div img {
-  height: 368px;
-  max-width: auto;
-  margin-top: 112px;
+  margin-top: 48px;
+  height: 384px;
+  width: 768px;
 }
 
 section.testimonial {
   position: relative;
+  margin-bottom: 48px;
 }
 
 section.testimonial div.quote {
   position: absolute;
-  width: 576px;
-  height: 280px;
-  background: #007Ac3;
+  width: 420px;
+  background: rgba(0, 122, 195, 0.9);
+  padding: 24px;
   color: #fff;
-  top: 64px;
-  left: 525px;
+  top: 0;
+  right: 0;
 }
 
 section.testimonial button{
@@ -423,56 +434,47 @@ button.share::after {
 
 section.promobox {
   position: relative;
+  margin-bottom: 48px;
 }
 
-
-section.promobox div.list-text {
+ul.list-text {
+  background: #fff;
   font-size: 25px;
   line-height: 35px;
   color: #474747;
-  background-color: #fff;
-}
-
-div.list-text ul {
   list-style: none;
-  padding: 64px 0 0 0;
-  left: -10px;
-  margin-left: 145px;
-  margin-top: 0;
+  padding: 64px 64px 64px 20px;
+  margin: 0;
+  width: 515px;
 }
 
-div.list-text ul li::before {
-  content: ">  ";
+ul.list-text li::before {
+  content: "\203A";
+  position: absolute;
+  margin-left: -20px;
+  font-weight: bolder;
+
 }
 
 section.promobox div img {
   height: 256px;
-  max-width: auto;
-  margin-top: 64px;
-
+  width: 464px;
+  margin-right: -64px;
 }
 
 section.promobox div.orangebox {
-  width: 512px;
   height: 64px;
   background-color: #ea8f00;
-  position: absolute;
-  left: -64px;                /* !!!!!!!!!!!!!!!!!!!!!!*/
+  margin-left: -64px;
 }
 
 section.promobox div.orangebox h2 {
   color: #fff;
   font-size: 32px;
   font-style: italic;
+  line-height: 64px;
   padding-left: 64px;
-  padding-top: 16px;
   margin: 0;
-}
-
-div.list-text {
-  float: left;
-  width: 400;
-
 }
 
 section.promobox button {
@@ -484,30 +486,14 @@ section.promobox button {
 }
 
 div.promobox-img {
-  float: left;
-  position: relative;
-  left: 246px;            /* !!!!!!!!!!!!!!!!!*/
-}
-
-div.promobox-pic {
   position: absolute;
-}
-
-.wrapperpromobox {
-  width: 1330px;
-  margin: 0 auto;
-  position: relative;
-  background: linear-gradient(to right, #fff 0%, #fff 61.5%, #F2F2F2 61.5%, #F2F2F2 100%);
+  top: 0;
+  right: 0;
+  /*width: 400px;*/
 }
 
 .container-promobox{
   background: linear-gradient(to right, #fff 0%, #fff 50%, #F2F2F2 50%, #F2F2F2 100%);
-}
-
-.wrapperbenefits {
-  width: 1280px;
-  margin: 0 auto;
-  position: relative;
 }
 
 section.benefit-img {
@@ -541,7 +527,7 @@ section.benefit-img {
   height: 0;
   border-style: solid;
   border-width: 64px 0 0 64px;
-  border-color: transparent transparent transparent rgba(36, 24, 102, 0.5);
+  border-color: transparent transparent transparent rgba(36, 24, 102, 0.7);
 }
 
 
@@ -563,7 +549,7 @@ section.benefit-img {
   height: 0;
   border-style: solid;
   border-width: 64px 64px 0 0;
-  border-color: rgba(0, 122, 195, 0.5) transparent transparent transparent;
+  border-color: rgba(0, 122, 195, 0.7) transparent transparent transparent;
 }
 
 
@@ -585,7 +571,7 @@ section.benefit-img {
   height: 0;
   border-style: solid;
   border-width: 0 0 64px 64px;
-  border-color: transparent transparent rgba(0, 122, 195, 0.5) transparent;
+  border-color: transparent transparent rgba(0, 122, 195, 0.7) transparent;
 }
 
 
@@ -607,7 +593,7 @@ section.benefit-img {
   height: 0;
   border-style: solid;
   border-width: 0 64px 64px 0;
-  border-color: transparent rgba(36, 24, 102, 0.5) transparent transparent;
+  border-color: transparent rgba(36, 24, 102, 0.7) transparent transparent;
 }
 
 
@@ -618,13 +604,13 @@ section.benefit-img {
 
 .cost,
 .safety {
-  background: rgba(36, 24, 102, 0.5);
+  background: rgba(36, 24, 102, 0.7);
   padding: 24px;
 }
 
 .flexibility,
 .usability {
-  background: rgba(0, 122, 195, 0.5);
+  background: rgba(0, 122, 195, 0.7);
   padding: 24px;
 }
 
@@ -651,6 +637,173 @@ section.benefit-img {
   margin-bottom: 0;
 }
 
+.calltoaction {
+  height: 250px;
+  margin-bottom: 48px;
+}
+
+.calltoaction .wrapper {
+  height: 100%;
+}
+
+.calltoaction .quote_wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 420px;
+  z-index: 2;
+}
+.calltoaction .quote_block {
+  background: rgba(234, 143, 0, 0.7);
+  padding: 24px;
+}
+
+.calltoaction .quote_block h2 {
+  color: #fff;
+  font-size: 32px;;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 46px;
+  margin: 0;
+}
+
+.calltoaction .quote_block p {
+  color: #fff;
+  margin: 10px 0 0;
+}
+
+.calltoaction button {
+  border: 0;
+}
+
+.calltoaction .free {
+  background: rgb(229, 32, 46);
+  color: #fff;
+  display: block;
+  line-height: 64px;
+  padding: 0 20px;
+  float: right;
+}
+
+.calltoaction .free:after {
+  content: "à";
+  margin-left: 10px;
+  font-family: 'Wingdings';
+}
+
+.calltoaction .cloud {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 760px;
+  z-index: 1;
+}
+
+.calltoaction .cloud p {
+  color: #717171;
+  margin: 0;
+  padding: 48px 220px 48px 48px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+section.FAQ {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.container-FAQ {
+  background: linear-gradient(to right, #241866 0%, #241866 50%, #F2F2F2 50%, #F2F2F2 100%);
+}
+
+.FAQ .dropdown-container {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  list-style: none;
+  padding: 48px 64px;
+  width: 247px;
+}
+
+.FAQ .dropdown {
+  background: #241866;
+  width: 625px;
+}
+
+.FAQ div#dropdown-1 {
+  padding-top: 24px;
+}
+
+.FAQ div#dropdown-5 {
+  padding-bottom: 64px;
+}
+
+.FAQ div#dropdown-1 .dropdown-container {
+  top: 84px;
+}
+
+.FAQ div#dropdown-2 .dropdown-container {
+  top: 181px;
+}
+
+.FAQ div#dropdown-3 .dropdown-container {
+  top: 136px;
+}
+
+.FAQ div#dropdown-4 .dropdown-container {
+  bottom: 136px;
+}
+
+.FAQ div#dropdown-5 .dropdown-container {
+  bottom: 64px;
+}
+
+.FAQ a.dropdown-link {
+  text-decoration: none;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.FAQ a.dropdown-link:hover {
+  background-color: #fff ;
+}
+
+.FAQ .FAQ-titletext {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.FAQ .dropdown h3 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  margin: 0;
+  padding: 0 32px;
+}
+.FAQ .dropdown h4 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  margin: 0;
+  padding: 0 32px;
+}
+
+.FAQ a.dropdown-link:hover h3 {
+  color: #474747;
+}
+
+.FAQ a.dropdown-link:hover h4 {
+  color: #241866;
+}
+
+.FAQ .dropdown-container p {
+  margin: 0;
+}
 
 /* Main end */
 
